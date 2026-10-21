@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO:START — the builder rewrites title / description / keywords for search (see CLAUDE.md) -->
+  <title>Video to GIF Converter – Free MP4 to GIF, No Upload</title>
+  <meta name="description" content="Convert MP4, WebM or MOV video to a looping GIF in your browser. Pick start and end, width and frame rate. Free, no upload, no watermark, works offline.">
+  <meta name="keywords" content="video to gif, mp4 to gif, convert video to gif, gif maker from video, mov to gif, webm to gif, make gif from video free, video to gif no watermark">
+  <!-- SEO:END -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://turhe123.github.io/video-to-gif-local/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Video to GIF Converter – Free, Private, In Your Browser">
+  <meta property="og:description" content="Turn a video clip into a looping GIF in your browser, with size and speed controls and no upload. Free and open source, nothing is uploaded, works offline.">
+  <meta property="og:url" content="https://turhe123.github.io/video-to-gif-local/">
+  <meta property="og:image" content="https://turhe123.github.io/video-to-gif-local/docs/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Video to GIF Converter">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Video to GIF Converter – Free, Private, In Your Browser">
+  <meta name="twitter:description" content="Turn a video clip into a looping GIF in your browser, with size and speed controls and no upload. Free and open source, nothing is uploaded, works offline.">
+  <meta name="twitter:image" content="https://turhe123.github.io/video-to-gif-local/docs/og.png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Video to GIF Converter",
+    "alternateName": "Video to GIF Converter – Free, Private, In Your Browser",
+    "description": "Turn a video clip into a looping GIF in your browser, with size and speed controls and no upload. Free and open source, nothing is uploaded, works offline.",
+    "url": "https://turhe123.github.io/video-to-gif-local/",
+    "image": "https://turhe123.github.io/video-to-gif-local/docs/og.png",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Works offline after the first visit.",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://opensource.org/licenses/MIT",
+    "softwareVersion": "1.0.0",
+    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" },
+    "sameAs": ["https://github.com/turhe123/video-to-gif-local"]
+  }
+  </script>
+  <script src="vendor/gif.js/gif.js" defer></script>
+  <!-- Page views are counted with GoatCounter: no cookies, no personal data, open source. -->
+  <script data-goatcounter="https://turhe123.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tool">Skip to the tool</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./" aria-label="Video to GIF Converter home">
+        <img class="brand__icon" src="icon.svg" alt="" width="28" height="28">
+        <span class="brand__name">Video to GIF Converter</span>
+      </a>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/turhe123/video-to-gif-local" rel="noopener">GitHub</a>
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener" class="site-nav__more">More tools</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <!-- HERO:START — the builder may refine the headline and promise; keep the trust badges -->
+      <h1 class="hero__title">Video to GIF Converter</h1>
+      <p class="hero__lead">Turn a video clip into a looping GIF in your browser, with size and speed controls and no upload.</p>
+      <!-- HERO:END -->
+      <ul class="badges" aria-label="Why this tool is safe to use">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Runs in your browser, files never leave your device</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, open source, no account, no ads</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works offline after the first visit</li>
+      </ul>
+    </section>
+
+    <section class="container" id="tool" aria-labelledby="tool-title">
+      <div class="tool-card">
+        <!-- TOOL:START — the builder replaces everything between these markers with the real tool UI -->
+        <h2 id="tool-title" class="visually-hidden">Make a GIF from a video</h2>
+        <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choose a video or drop it here">
+          <label class="visually-hidden" for="file-input">Choose a video</label>
+          <input class="dropzone__input" id="file-input" type="file" accept="video/*,.mp4,.m4v,.webm,.mov,.mkv,.ogv" aria-describedby="dropzone-hint">
+          <svg class="dropzone__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 10 5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <p class="dropzone__title">Drop a video here or <span class="link">choose a video</span></p>
+          <p class="dropzone__hint" id="dropzone-hint">MP4, WebM or MOV. Nothing is uploaded, the GIF is made on this device.</p>
+        </div>
+
+        <div class="editor" id="editor" hidden>
+          <div class="editor__video preview">
+            <video id="preview" controls muted playsinline preload="auto" aria-label="Video preview"></video>
+          </div>
+          <p class="editor__file" id="file-info"></p>
+
+          <fieldset class="trim">
+            <legend class="field__label">Part of the video to convert</legend>
+            <div class="trim__track" id="trim-track">
+              <div class="trim__fill" id="trim-fill"></div>
+              <input type="range" id="start-range" min="0" max="5" step="0.05" value="0" aria-label="Start time slider">
+              <input type="range" id="end-range" min="0" max="5" step="0.05" value="5" aria-label="End time slider">
+            </div>
+            <div class="trim__inputs">
+              <div class="field">
+                <label for="start">Start (seconds)</label>
+                <input type="number" id="start" min="0" step="0.1" value="0" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="end">End (seconds)</label>
+                <input type="number" id="end" min="0" step="0.1" value="5" inputmode="decimal">
+              </div>
+              <p class="trim__length" id="clip-length" aria-live="polite"></p>
+            </div>
+            <div class="alert alert--warn" id="length-warning" hidden>
+              <p id="length-warning-text"></p>
+              <label class="check"><input type="checkbox" id="allow-long"> Make it anyway</label>
+            </div>
+          </fieldset>
+
+          <div class="gif-options">
+            <div class="field">
+              <label for="width">Width</label>
+              <select id="width">
+                <option value="240">240 px</option>
+                <option value="320">320 px</option>
+                <option value="480" selected>480 px</option>
+                <option value="640">640 px</option>
+                <option value="original">Original (max 800)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fps">Frame rate</label>
+              <select id="fps">
+                <option value="5">5 fps</option>
+                <option value="8">8 fps</option>
+                <option value="10" selected>10 fps</option>
+                <option value="12">12 fps</option>
+                <option value="15">15 fps</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quality">Colour quality</label>
+              <select id="quality">
+                <option value="20">Low (fastest)</option>
+                <option value="10" selected>Medium</option>
+                <option value="3">High (slowest)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="loop">Loop</label>
+              <select id="loop">
+                <option value="0" selected>Forever</option>
+                <option value="-1">Play once</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="estimate" id="estimate" aria-live="polite"></p>
+
+          <div class="row make-row">
+            <button class="btn btn--primary" id="make" type="button">Make GIF</button>
+            <button class="btn btn--ghost" id="cancel" type="button" hidden>Cancel</button>
+            <p class="make-row__hint"><span class="kbd">Space</span> plays or pauses the preview, <span class="kbd">Enter</span> makes the GIF.</p>
+          </div>
+          <div class="progress-wrap" id="progress-wrap" hidden>
+            <div class="progress" role="progressbar" aria-labelledby="progress-text" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><span id="progress-bar"></span></div>
+            <p class="progress-text" id="progress-text"></p>
+          </div>
+        </div>
+
+        <div class="results" id="results" aria-live="polite">
+          <p class="empty-state" id="empty-state">Pick a video to start. It is decoded by your browser and turned into a GIF on this device: no upload, no account, no watermark. GIFs have no sound.</p>
+        </div>
+        <!-- TOOL:END -->
+      </div>
+    </section>
+
+    <section class="container section" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="section__title">How it works</h2>
+      <!-- HOW:START — three honest steps for this tool -->
+      <ol class="steps">
+        <li><strong>Open a video.</strong> Drop an MP4, WebM or MOV on the page, or pick one. Your browser plays it locally; nothing is sent anywhere.</li>
+        <li><strong>Pick the part and the size.</strong> Drag the start and end handles (up to 20 seconds), then choose width, frame rate, colour quality and loop. The estimated size updates as you go.</li>
+        <li><strong>Make and download.</strong> Press Make GIF. Each frame is captured and encoded in background workers, then you can preview the GIF and save it.</li>
+      </ol>
+      <!-- HOW:END -->
+    </section>
+
+    <section class="container section" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section__title">Questions, answered</h2>
+      <!-- FAQ:START — 4 to 6 questions; keep the privacy, offline and AI answers -->
+      <details class="faq" open>
+        <summary>Are my videos uploaded anywhere?</summary>
+        <p>No. Video to GIF Converter runs entirely in your browser. Your video is read into memory on your device, its frames are captured and encoded with JavaScript, and nothing is sent to a server. You can disconnect from the internet and it keeps working.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it really free, without a watermark?</summary>
+        <p>Yes. It is open source under the MIT license, with no account, no watermark, no upload limit and no ads. If it saves you a paid subscription, you can say thanks on Ko-fi.</p>
+      </details>
+      <details class="faq">
+        <summary>Why does my video show an error?</summary>
+        <p>The tool can only read videos your browser can play. MP4 with H.264 works almost everywhere; HEVC (H.265) MOV files from some phones only play in some browsers. If you see a codec error, export or convert the clip to an MP4 with H.264 and try again.</p>
+      </details>
+      <details class="faq">
+        <summary>Why is my GIF so big, and where is the sound?</summary>
+        <p>GIF is an old format that stores every frame with at most 256 colours and no audio, so it is often ten times larger than the video. Keep clips short, use a smaller width or a lower frame rate to shrink it. If the place you are posting to accepts WebM or MP4, those are much smaller and keep the sound.</p>
+      </details>
+      <details class="faq">
+        <summary>Does it work offline?</summary>
+        <p>Yes. After your first visit the page is cached by a service worker, so it loads without a connection. You can also install it from your browser's menu as an app.</p>
+      </details>
+      <details class="faq">
+        <summary>Was this written by AI?</summary>
+        <p>Yes. Video to GIF Converter was generated by Claude Code from a written specification inside an automated pipeline, with a test suite that runs in a real browser. The full source is on GitHub, so you can read every line before you trust it with your files.</p>
+      </details>
+      <!-- FAQ:END -->
+    </section>
+
+    <section class="container section" id="support">
+      <div class="support-card">
+        <h2 class="section__title">Built by one person, given away for free</h2>
+        <p>Video to GIF Converter is a free alternative to paid tools like EZGIF Video to GIF. If it earns a place in your bookmarks, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi" href="https://ko-fi.com/leodavidai" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__links">
+        <a href="https://github.com/turhe123/video-to-gif-local" rel="noopener">Source on GitHub</a> ·
+        <a href="https://github.com/turhe123/video-to-gif-local/issues" rel="noopener">Report a bug</a> ·
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener">More free web tools</a> ·
+        <a href="https://ko-fi.com/leodavidai" rel="noopener">Ko-fi</a>
+      </p>
+      <p class="site-footer__disclosure"><strong>Built with AI.</strong> Video to GIF Converter was written by Claude Code inside an automated pipeline from a plain-English spec, as a clean-room implementation: no code or assets from any commercial product. It runs entirely in your browser, makes no network requests except an anonymous, cookieless page-view count, and has had less human review than hand-written software. Bug reports and pull requests are welcome.</p>
+      <p class="site-footer__copy">© 2026 Or Davidai Bachar · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="site.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
